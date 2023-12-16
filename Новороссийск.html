@@ -1,0 +1,131 @@
+﻿<html>
+    <head>
+       <title>Новороссийск</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1fd8810b-a86f-402f-8517-817b15a541a2"></script>
+    <script src="НовороссийскCSS\panorama_events.js"></script>
+<link rel="stylesheet" type="text/css" href="ПоискCSS\иконка.css" /> 
+<script src="ПоискCSS\poisk.js"></script>
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+<link rel="stylesheet" type="text/css" href="ГимныГимнТекст.css" />
+<script src="Гимны\ГимнСкрипт.js"></script>
+    <script src="ПоискCSS\iconk.js"></script>
+<script language="javascript" type="text/javascript">
+   function loadd() {
+   var getInput = "Новороссийск";
+   localStorage.setItem("storageName",getInput);
+}
+    </script>
+<link rel="stylesheet" type="text/css" href="НовороссийскCSS\Новороссийск.css" /> 
+<style>
+        
+        #map {
+border: 2px solid black;
+		align:right;
+               width: 90%;
+               height: 85%;
+               padding: 0px;
+               margin-top: 20px;
+margin-left: auto;
+    margin-right: auto;
+        }
+        
+    </style>
+
+
+    </head>
+  <body onload="search()">
+
+        <nav>
+  <ul class="topmenu">
+<a style = "" id="specialButton" href="#"><img style =""src="image/icon2.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+	<li><a href="Главная.html">Главная</a></li>
+    <li><a href="Города.html">Города</a>
+      <ul class="submenu">
+      <li><a id="str1" href="Ленинград.html" class="submenu-link">Ленинград(Санкт-Петербург)</a></li>
+        <li><a href="Волгоград.html" class="submenu-link">Волгоград</a></li>
+       <li><a href="Севастополь.html" id="str3" class="submenu-link">Севастополь</a></li>
+<li><a href="Одесса.html" id="str3" class="submenu-link">Одесса</a></li> 
+<li><a href="Москва.html" id="str3" class="submenu-link">Москва</a></li> 
+<li><a href="Киев.html" id="str3" class="submenu-link">Киев</a></li> 
+<li><a href="Брест.html" id="str3" class="submenu-link">Брест</a></li> 
+<li><a href="Керчь.html" id="str3" class="submenu-link">Керчь</a></li> 
+<li><a href="Новороссийск.html" id="str3" class="submenu-link">Новороссийск</a></li> 
+<li><a href="Минск.html" id="str3" class="submenu-link">Минск</a></li> 
+<li><a href="Тула.html" id="str3" class="submenu-link">Тула</a></li> 
+<li><a href="Мурманск.html" id="str3" class="submenu-link">Мурманск</a></li> 
+<li><a href="Смоленск.html" id="str3" class="submenu-link">Смоленск</a></li>    
+      </ul>
+    </li>
+    <li><a href="КартаМ.html">Карта</a></li>
+<li><a href="ТестПриветствие.html">Тест</a></li>
+<li><a href="Поиск.html">Поиск</a>
+      <ul class="submenu2" >
+      <li><input type="text" onclick =
+
+ "(function() {
+  document.getElementById('Поиск').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid2');
+a.click();
+    }
+  });
+})();" id = "Поиск" placeholder="Поиск">
+       <input type="button" id = "butnotid2"  onclick="putsearch()" value="Искать">
+	</li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+<div class="content">
+<div id="txt">
+
+ <img class = "imgl" src = "image\НовороссийскЛого.jpg">
+<figure class = "emblem">
+<img src = "image\Новороссийск.jpg">
+ <figcaption>Знак города</figcaption>
+</figure>
+<h1 align = "center">Новороссийск</h1>
+<div class ="texxt">
+
+
+
+
+
+
+<p>1941 год. Мирная жизнь Новороссийска, как и многих других городов и сёл нашей Родины, остановилась 22 июня 1941 года. В первые же дни войны город стал важным стратегическим пунктом. В ноябре 1941 года сюда был переведён основной состав штаба Черноморского флота, военные корабли которого сыграли не последнюю роль в освобождении Новороссийска и всего Черноморского побережья от немецких захватчиков. А через Новороссийский морской порт фронт снабжался боеприпасами, снарядами, необходимым снаряжением. Отсюда происходила эвакуация предприятий в глубь страны, портовые доки перерабатывали миллионы тонн грузов.
+<figure class = "imagecapr">
+<img src = "НовороссийскCSS\image\памятник2.jpg">
+ <figcaption>Мемориальный комплекс "Рубеж обороны"</figcaption>
+</figure>
+<p>1942 год. Наступление на Новороссийск вермахт начал 19 августа. Но с ходу взять город не получилось. Пять тысяч молодых солдат 103-й курсантской стрелковой бригады держали оборону больше двух недель. Для защиты города был создан Новороссийский оборонительный район. В городе активно создавались отряды народного ополчения, было построено более 200 огневых оборонных точек и командных пунктов, была оборудована полоса противотанковых и противопехотных препятствий... Но несмотря на героические усилия защитников Новороссийска, силы были неравными. Шестого сентября гитлеровцы всё-таки ворвались в Новороссийск и в течение ближайших нескольких дней заняли почти весь город.
+<figure class = "imagecapl">
+<img src = "НовороссийскCSS\image\памятник1.jpg">
+ <figcaption>Памятник освободителям Новороссийска</figcaption>
+</figure>
+<p>1943 год. Первое наступление советских войск в направлении приморского города началось 10 января. Но из-за плохой подготовки закончилось полным провалом. Советские солдаты не смогли прорвать немецкую оборону. А когда вермахт перебросил в Новороссийск свою 17-ю армию, сдвинуть фашистов с места у советских солдат не было никакой возможности, даже при поддержке флота.
+<p>4 февраля на южном рубеже Новороссийска, в районе населенного пункта Станички, высадился морской десант, возглавляемый майором Цезарем Кунниковым. Плацдарм площадью около 30 квадратных километров, который заняли советские воины, вошёл в историю Великой Отечественной войны под названием «Малая земля». Этот клочок земли стал настоящей передовой, но без тыла. С одной стороны — враг, с другой — море. Самоотверженные советские солдаты держали оборону этого участка города 225 дней. Окончательно выбить фашистов из Новороссийска удалось лишь в сентябре ударом трёх родов войск — авиации, флота и сухопутных частей Красной армии. Победа под Новороссийском привела к изгнанию врага со всего Таманского полуострова
+
+
+</div>
+
+<div style = "text-align:center">
+<span style = "font-size:2vw;  color:white;">Официального гимна нет.</span>
+<br>
+</div>
+ <div id="map"></div>
+<a href="КартаМ.html"><input type="button" class="button6" onClick= loadd() value="Маршрут"></a>
+</div>
+
+</div>
+</div>
+
+<div class="footer" style="font-size:1.3vw">
+   
+    Учреждение образования "Пинский государственный колледж техники и технологий"
+   
+  </div>
+
+    </body>
+</html>

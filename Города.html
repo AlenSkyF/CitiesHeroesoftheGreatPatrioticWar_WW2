@@ -1,0 +1,128 @@
+﻿<html>
+    <head>
+       <title>Список городов</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ГородаCSS/города.css" /> 
+<script>type="text/javascript"></script>
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="ПоискCSS\iconk.js"></script>
+ <link rel="stylesheet" type="text/css" href="ПоискCSS\иконка.css" /> 
+
+
+
+    </head>
+    <body>
+
+        <nav>
+  <ul class="topmenu">
+<a style = "" id="specialButton" href="#"><img style =""src="image/icon2.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+	<li><a href="Главная.html">Главная</a></li>
+    <li><a href="Города.html">Города</a>
+      <ul class="submenu">
+      <li><a id="str1" href="Ленинград.html" class="submenu-link">Ленинград(Санкт-Петербург)</a></li>
+        <li><a href="Волгоград.html" class="submenu-link">Волгоград</a></li>
+       <li><a href="Севастополь.html" id="str3" class="submenu-link">Севастополь</a></li>
+<li><a href="Одесса.html" id="str3" class="submenu-link">Одесса</a></li> 
+<li><a href="Москва.html" id="str3" class="submenu-link">Москва</a></li> 
+<li><a href="Киев.html" id="str3" class="submenu-link">Киев</a></li> 
+<li><a href="Брест.html" id="str3" class="submenu-link">Брест</a></li> 
+<li><a href="Керчь.html" id="str3" class="submenu-link">Керчь</a></li> 
+<li><a href="Новороссийск.html" id="str3" class="submenu-link">Новороссийск</a></li> 
+<li><a href="Минск.html" id="str3" class="submenu-link">Минск</a></li> 
+<li><a href="Тула.html" id="str3" class="submenu-link">Тула</a></li> 
+<li><a href="Мурманск.html" id="str3" class="submenu-link">Мурманск</a></li> 
+<li><a href="Смоленск.html" id="str3" class="submenu-link">Смоленск</a></li>    
+      </ul>
+    </li>
+    <li><a href="КартаМ.html">Карта</a></li>
+<li><a href="ТестПриветствие.html">Тест</a></li>
+<li><a href="Поиск.html">Поиск</a>
+      <ul class="submenu2" >
+      <li><input type="text" onclick =
+
+ "(function() {
+  document.getElementById('Поиск').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid2');
+a.click();
+    }
+  });
+})();" id = "Поиск" placeholder="Поиск">
+       <input type="button" id = "butnotid2"  onclick="putsearch()" value="Искать">
+	</li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+<div class="content">
+
+<figure class = "imagecapl">
+<a href = "Брест.html" alt="Брест"><img src = "image\БрестЗн.png">
+ <figcaption>Брест</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Волгоград.html" alt="Волгоград"><img src = "image\ВолгоградЗн.png">
+ <figcaption>Волгоград</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Керчь.html" alt="Керчь"><img src = "image\КерчьЗн.png">
+ <figcaption>Керчь</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Киев.html" alt="Киев"><img src = "image\КиевЗн.png">
+ <figcaption>Киев</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Ленинград.html" alt="Ленинград"><img src = "image\ЛенинградЗн.png">
+ <figcaption>Ленинград</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Минск.html" alt="Минск"><img src = "image\МинскЗн.png">
+ <figcaption>Минск</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Москва.html" alt="Москва"><img src = "image\МоскваЗн.png">
+ <figcaption>Москва</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Мурманск.html" alt="Мурманск"><img src = "image\МурманскЗн.png">
+ <figcaption>Мурманск</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Новороссийск.html" alt="Новороссийск"><img src = "image\НовороссийскЗн.png">
+ <figcaption>Новороссийск</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Одесса.html" alt="Одесса"><img src = "image\ОдессаЗн.png">
+ <figcaption>Одесса</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Севастополь.html" alt="Севастополь"><img src = "image\СевастопольЗн.png">
+ <figcaption>Севастополь</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Смоленск.html" alt="Смоленск"><img src = "image\СмоленскЗн.png">
+ <figcaption>Смоленск</figcaption></a>
+</figure>
+<figure class = "imagecapl">
+<a href = "Тула.html" alt="Тула"><img src = "image\ТулаЗн.png">
+ <figcaption>Тула</figcaption></a>
+</figure>
+
+
+</div>
+</div>
+
+</div>
+
+
+<div class="footer" style="font-size:1.3vw">
+   
+    Учреждение образования "Пинский государственный колледж техники и технологий"
+   
+  </div>
+
+    </body>
+</html>

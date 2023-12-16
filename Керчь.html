@@ -1,0 +1,135 @@
+﻿<html>
+    <head>
+       <title>Керчь</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1fd8810b-a86f-402f-8517-817b15a541a2"></script>
+    <script src="КерчьCSS\panorama_events.js"></script>
+<link rel="stylesheet" type="text/css" href="ГимныГимнТекст.css" />
+<script src="Гимны\ГимнСкрипт.js"></script>
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+<link rel="stylesheet" type="text/css" href="ПоискCSS\иконка.css" /> 
+<script src="ПоискCSS\poisk.js"></script>
+    <script src="ПоискCSS\iconk.js"></script>
+<script language="javascript" type="text/javascript">
+   function loadd() {
+   var getInput = "Керчь";
+   localStorage.setItem("storageName",getInput);
+}
+    </script>
+<link rel="stylesheet" type="text/css" href="КерчьCSS\Керчь.css" /> 
+<style>
+        
+        #map {
+border: 2px solid black;
+		align:right;
+               width: 90%;
+               height: 85%;
+               padding: 0px;
+               margin-top: 20px;
+margin-left: auto;
+    margin-right: auto;
+        }
+        
+    </style>
+
+
+    </head>
+    <body onload="search()">
+
+       <nav>
+  <ul class="topmenu">
+<a style = "" id="specialButton" href="#"><img style =""src="image/icon2.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+	<li><a href="Главная.html">Главная</a></li>
+    <li><a href="Города.html">Города</a>
+      <ul class="submenu">
+      <li><a id="str1" href="Ленинград.html" class="submenu-link">Ленинград(Санкт-Петербург)</a></li>
+        <li><a href="Волгоград.html" class="submenu-link">Волгоград</a></li>
+       <li><a href="Севастополь.html" id="str3" class="submenu-link">Севастополь</a></li>
+<li><a href="Одесса.html" id="str3" class="submenu-link">Одесса</a></li> 
+<li><a href="Москва.html" id="str3" class="submenu-link">Москва</a></li> 
+<li><a href="Киев.html" id="str3" class="submenu-link">Киев</a></li> 
+<li><a href="Брест.html" id="str3" class="submenu-link">Брест</a></li> 
+<li><a href="Керчь.html" id="str3" class="submenu-link">Керчь</a></li> 
+<li><a href="Новороссийск.html" id="str3" class="submenu-link">Новороссийск</a></li> 
+<li><a href="Минск.html" id="str3" class="submenu-link">Минск</a></li> 
+<li><a href="Тула.html" id="str3" class="submenu-link">Тула</a></li> 
+<li><a href="Мурманск.html" id="str3" class="submenu-link">Мурманск</a></li> 
+<li><a href="Смоленск.html" id="str3" class="submenu-link">Смоленск</a></li>    
+      </ul>
+    </li>
+    <li><a href="КартаМ.html">Карта</a></li>
+<li><a href="ТестПриветствие.html">Тест</a></li>
+<li><a href="Поиск.html">Поиск</a>
+      <ul class="submenu2" >
+      <li><input type="text" onclick =
+
+ "(function() {
+  document.getElementById('Поиск').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid2');
+a.click();
+    }
+  });
+})();" id = "Поиск" placeholder="Поиск">
+       <input type="button" id = "butnotid2"  onclick="putsearch()" value="Искать">
+	</li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+<div class="content">
+<div id="txt">
+
+ <img class = "imgl" src = "image\КерчьЛого.jpg">
+<figure class = "emblem">
+<img src = "image\Керчь.jpg">
+ <figcaption>Знак города</figcaption>
+</figure>
+<h1 align = "center">Керчь</h1>
+<div class ="texxt">
+
+В годы Великой Отечественной войны Керчь стала ареной жестоких сражений между советскими и германскими войсками. Линия фронта четырежды проходила через Керчь.
+В ходе Крымской операции 1941 года Керчь стала прифронтовым городом. 
+<p>Со 2-й половины октября начались ежедневные налеты немецко-фашистской авиации. В очень тяжелых условиях удалось вывезти из города 30 тыс. жителей.
+
+<p>К концу октября основное оборудование промышленности отправлено на Урал и в Сибирь, на металлургическом заводе им. Войкова взорваны домны. 4 ноября образован Керченский оборонительный район (в основе - 51-я армия).
+
+<p>9-10 ноября начались бои на окраине Керчи. Советские войска героически обороняли город, который оставили 16 ноября по приказу Ставки верховного главнокомандующего.
+<figure class = "imagecapl">
+<img src = "КерчьCSS\image\памятник1.jpg">
+ <figcaption>Обелиск славы на горе Митридат</figcaption>
+</figure>
+<p>Фашисты установили в Керчи жестокий оккупационный режим, проводили репрессии против населения. За время оккупации были убиты 15 тысяч мирных жителей . Из них 7 тысяч расстреляны в Багеровском рве. Более 14 тысяч угнаны в Германию.
+<figure class = "imagecapr">
+<img src = "КерчьCSS\image\памятник2.jpg">
+ <figcaption>Монумент "Героям Аджимушкая"</figcaption>
+</figure>
+<p>30 декабря 1941 г. в ходе Керченско-Феодосийской десантной операции 1941-1942 г. Керчь была освобождена, но 19 мая 1942 г. вновь оккупирована противником. Почти 5 месяцев в Аджимушкайских каменоломнях вели героическую борьбу с немецкими захватчиками части войск Крымского фронта, не успевшие эвакуироваться с Керченского полуострова на Таманский, и партизаны.
+
+<p>Город вновь был освобожден 11 апреля 1944 г. в результате Крымской операции 1944 г. 21 воинской части и соединению присвоено почётное наименование Керченских.
+За годы войны Керчь была разрушена. В послевоенные годы промышленность и городское хозяйство восстановлены.
+
+<p>За выдающиеся заслуги перед родиной, массовый героизм, мужество и стойкость, проявленные трудящимися города, воинами Красной Армии и ВМФ в годы Великой Отечественной войны, и в ознаменование 30-летия разгрома фашистских войск в Крыму Керчи 14 сентября 1973 г. присвоено звание «Город-герой» с вручением ордена Ленина и медали «Золотая Звезда». 08 октября 1974 городу  вручен орден Отечественной войны 1-ой степени.
+В Керчи на горе Митридат установлен обелиск Славы (1944 г.), открыты мемориальные ансамбли героям Аджимушкайских каменоломен (1968), эльтигенского десанта (1985), воздвигнуты другие памятники защитникам и освободителям города.
+</div>
+
+<div style = "text-align:center">
+<span style = "font-size:2vw;  color:white;">Официального гимна нет.</span>
+<br>
+</div>
+ <div id="map"></div>
+<a href="КартаМ.html"><input type="button" class="button6" onClick= loadd() value="Маршрут"></a>
+</div>
+
+</div>
+</div>
+
+ <div class="footer" style="font-size:1.3vw">
+   
+    Учреждение образования "Пинский государственный колледж техники и технологий"
+   
+  </div>
+
+    </body>
+</html>

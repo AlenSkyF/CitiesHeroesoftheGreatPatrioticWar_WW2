@@ -1,0 +1,273 @@
+﻿<html>
+    <head>
+       <title>Тест</title>
+    <script src="ПоискCSS\iconk.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="ПоискCSS\иконка.css" /> 
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+  
+<script>
+var procent=0;
+
+var voppz=0;
+var nowz = 0;
+var arrz ="";
+var countz=0;
+var rezultz="";
+
+var count = 10;
+var colvo = count;
+var vopp = 0;
+var arr = [];
+
+var rezult = '';
+var now = 0;
+count++;
+</script>
+<script type="text/javascript" src="ТестCSS\vopr.js"></script>
+
+<link rel="stylesheet" type="text/css" href="ТестCSS\Тест.css" /> 
+
+
+    </head>
+    <body>
+
+        <nav>
+  <ul class="topmenu">
+<a style = "" id="specialButton" href="#"><img style =""src="image/icon2.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+	<li><a href="Главная.html">Главная</a></li>
+    <li><a href="Города.html">Города</a>
+      <ul class="submenu">
+      <li><a id="str1" href="Ленинград.html" class="submenu-link">Ленинград(Санкт-Петербург)</a></li>
+        <li><a href="Волгоград.html" class="submenu-link">Волгоград</a></li>
+       <li><a href="Севастополь.html" id="str3" class="submenu-link">Севастополь</a></li>
+<li><a href="Одесса.html" id="str3" class="submenu-link">Одесса</a></li> 
+<li><a href="Москва.html" id="str3" class="submenu-link">Москва</a></li> 
+<li><a href="Киев.html" id="str3" class="submenu-link">Киев</a></li> 
+<li><a href="Брест.html" id="str3" class="submenu-link">Брест</a></li> 
+<li><a href="Керчь.html" id="str3" class="submenu-link">Керчь</a></li> 
+<li><a href="Новороссийск.html" id="str3" class="submenu-link">Новороссийск</a></li> 
+<li><a href="Минск.html" id="str3" class="submenu-link">Минск</a></li> 
+<li><a href="Тула.html" id="str3" class="submenu-link">Тула</a></li> 
+<li><a href="Мурманск.html" id="str3" class="submenu-link">Мурманск</a></li> 
+<li><a href="Смоленск.html" id="str3" class="submenu-link">Смоленск</a></li>    
+      </ul>
+    </li>
+    <li><a href="КартаМ.html">Карта</a></li>
+<li><a href="ТестПриветствие.html">Тест</a></li>
+<li><a href="Поиск.html">Поиск</a>
+      <ul class="submenu2" >
+      <li><input type="text" onclick =
+
+ "(function() {
+  document.getElementById('Поиск').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid2');
+a.click();
+    }
+  });
+})();" id = "Поиск" placeholder="Поиск">
+       <input type="button" id = "butnotid2"  onclick="putsearch()" value="Искать">
+	</li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+<div class="content">
+
+<div class = "testt">
+<label id = "nomer">Вопрос номер 1</label>
+<br>
+<br>
+<label class = "vopp" id = "vopros">что такое чихуахуа</label>
+<br>
+<br>
+<div class = "v12345">
+<input type="radio"  id="v1"
+     name="contact" value="email">
+    <label for="v1" id="v11">Email</label>
+<br>
+<input type="radio"  id="v2"
+     name="contact" value="email">
+    <label for="v2" id="v21">мыло</label>
+<br>
+<input type="radio" id="v3"
+     name="contact" value="email">
+    <label for="v3" id="v31">мыло</label>
+</div>
+<br>
+<br>
+<button id = "butt" onClick = allow()>Далее</button>
+<br>
+
+
+
+
+
+
+<script>
+
+var prof = localStorage.getItem("key2");
+if(prof==1)
+{
+vopp = parseInt(localStorage.getItem("vopps"));
+arrz = localStorage.getItem("arrs");
+var arr111 = arrz.split(",");
+for(let i = 0; i < arr111.length-1;i++)
+{
+arr.push(parseInt(arr111[i]));
+}
+nowz = parseInt(localStorage.getItem("nows"));
+count=localStorage.getItem("counts");
+rezult=localStorage.getItem("rezults");
+document.getElementById('nomer').innerHTML = 'Вопрос номер '+ vopp;
+	document.getElementById('vopros').innerHTML = questions[nowz].text;
+	document.getElementById('v11').innerHTML = questions[nowz].variants[0];
+	document.getElementById('v21').innerHTML = questions[nowz].variants[1];
+	document.getElementById('v31').innerHTML = questions[nowz].variants[2];	
+}
+
+
+else
+{
+	vopp = vopp +1;
+	count = count - 1;
+	var rnd = Math.floor(Math.random() * questions.length);
+	arr.push(questions[rnd].id);
+	arrz=arrz+questions[rnd].id+",";
+	now = rnd;
+	document.getElementById('nomer').innerHTML = 'Вопрос номер '+ vopp;
+	document.getElementById('vopros').innerHTML = questions[rnd].text;
+	document.getElementById('v11').innerHTML = questions[rnd].variants[0];
+	document.getElementById('v21').innerHTML = questions[rnd].variants[1];
+	document.getElementById('v31').innerHTML = questions[rnd].variants[2];	
+}
+
+var prof2 = localStorage.getItem("key");
+if(prof2==1 && prof!=1)
+{
+document.location.href = "ТестПриветствие.html";
+}
+localStorage.setItem("key2", 0);
+</script>
+
+
+
+<script>
+	function allow(){
+		if(document.getElementById('v1').checked==0 && document.getElementById('v2').checked==0 && document.getElementById('v3').checked==0)
+		{
+		alert('Вы не выбрали не одного варианта!');
+		return;
+		}
+var nazv = "v" + (questions[now].right+1);
+
+if(document.getElementById(nazv).checked)
+{
+  rezult = rezult + "Вопрос " + vopp + ":" + " ответ верный."+ " Ваш ответ - "+ document.getElementById(nazv+1).innerHTML + "<br><br>";
+procent = procent + (100.0/colvo);
+
+}
+else
+{
+	if(document.getElementById('v1').checked)
+{
+  rezult = rezult + "Вопрос " + vopp + ":" + " ответ неверный."+ " Ваш ответ - "+ document.getElementById('v11').innerHTML +". <a style='color:red; font-size:1.5vw' href ='"+questions[now].stro+"'>Ссылка на статью с правильным ответом</a>" + "<br><br>";
+
+}
+	if(document.getElementById('v2').checked)
+{
+  rezult = rezult + "Вопрос " + vopp + ":" + " ответ неверный."+ " Ваш ответ - "+ document.getElementById('v21').innerHTML +". <a style='color:red; font-size:1.5vw' href ='"+questions[now].stro+"'>Ссылка на статью с правильным ответом</a>" + "<br><br>";
+
+}
+	if(document.getElementById('v3').checked)
+{
+  rezult = rezult + "Вопрос " + vopp + ":" + " ответ неверный."+ " Ваш ответ - "+ document.getElementById('v31').innerHTML +". <a style='color:red; font-size:1.5vw' href ='"+questions[now].stro+"'>Ссылка на статью с правильным ответом</a>" + "<br><br>";
+
+}
+
+}
+
+  
+  	if(count != 1)
+{	
+	localStorage.setItem("rezults", rezult);
+	localStorage.setItem("key", 1);
+	vopp = vopp +1;
+localStorage.setItem("vopps",vopp);
+	count = count - 1;
+localStorage.setItem("counts",count);
+if(count==1)
+{document.getElementById('butt').innerHTML = "Результат"}
+	loop1:	
+do {
+  var rnd = Math.floor(Math.random() * questions.length);
+} while (arr.indexOf(questions[rnd].id)!=-1);
+
+	now = rnd;
+document.getElementById('v1').checked = false;
+document.getElementById('v2').checked = false;
+document.getElementById('v3').checked = false;
+	arr.push(questions[rnd].id);
+	arrz=arrz+questions[rnd].id+",";
+	localStorage.setItem("arrs",arrz);
+	localStorage.setItem("nows",rnd);
+	document.getElementById('nomer').innerHTML = 'Вопрос номер '+ vopp;
+	document.getElementById('vopros').innerHTML = questions[rnd].text;
+	document.getElementById('v11').innerHTML = questions[rnd].variants[0];
+	document.getElementById('v21').innerHTML = questions[rnd].variants[1];
+	document.getElementById('v31').innerHTML = questions[rnd].variants[2];
+}
+
+		else
+{
+
+document.getElementById('nomer').innerHTML = 'Результат:';
+
+rezult = rezult+"Процент верно отвеченных вопросов: "+ procent.toPrecision(4)+"%";
+document.getElementById('vopros').innerHTML = rezult;
+
+document.getElementById('v11').remove();
+document.getElementById('v21').remove();
+document.getElementById('v31').remove();
+document.getElementById('v1').remove();
+document.getElementById('v2').remove();
+document.getElementById('v3').remove();
+document.getElementById('butt').remove();
+
+localStorage.removeItem("arrs");
+localStorage.removeItem("vopps");
+localStorage.removeItem("nows");
+localStorage.removeItem("counts");
+localStorage.removeItem("key2");
+localStorage.removeItem("key");
+localStorage.removeItem("rezults");
+
+}
+
+
+
+}
+	</script>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="footer" style="font-size:1.3vw">
+   
+    Учреждение образования "Пинский государственный колледж техники и технологий"
+   
+  </div>
+
+    </body>
+</html>

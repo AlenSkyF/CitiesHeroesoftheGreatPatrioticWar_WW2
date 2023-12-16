@@ -1,0 +1,281 @@
+<html>
+    <head>
+       <title>Главная</title>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ПоискCSS\iconk.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" /> 
+<link rel="stylesheet" type="text/css" href="ПоискCSS\иконка.css" /> 
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+<link rel="stylesheet" href="letsee/letsee.css"/>
+<script src="letsee/letsee.js"></script>
+
+
+
+
+
+
+<script>
+   function getIdOfDatalist()
+{
+	
+    var element_input = document.getElementById('myoptions');
+
+    var element_datalist = document.getElementById('dl_options');
+    var opSelected = element_datalist.querySelector(`[value="${element_input.value}"]`);
+ if (opSelected === null) {
+   alert('Данного города не существует. Выберите город из списка');
+}
+else {
+    var id = opSelected.getAttribute('data-value');
+
+
+switch(id) {
+  case "1":  
+    document.location.href = "крым.html";
+    break;
+
+  case "2": 
+   document.location.href = "москва.html";
+    break;
+
+  default:
+   alert('Данного города не существует. Выберите город из списка');
+    break;
+}}}
+
+  </script>
+
+    </head>
+    <body>
+
+        <nav>
+
+
+
+
+  <ul class="topmenu">
+
+<a style = "" id="specialButton" href="#"><img style =""src="image/icon1.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+
+    <li><a href="Города.html">Города</a>
+      <ul class="submenu">
+      <li><a style = "background:#736b459b;" id="str1" href="Ленинград.html" class="submenu-link">Ленинград(Санкт-Петербург)</a></li>
+        <li><a style = "background:#736b459b;" href="Волгоград.html" class="submenu-link">Волгоград</a></li>
+       <li><a style = "background:#736b459b;" href="Севастополь.html" id="str3" class="submenu-link">Севастополь</a></li>
+<li><a style = "background:#736b459b;" href="Одесса.html" id="str3" class="submenu-link">Одесса</a></li> 
+<li><a style = "background:#736b459b;" href="Москва.html" id="str3" class="submenu-link">Москва</a></li> 
+<li><a style = "background:#736b459b;" href="Киев.html" id="str3" class="submenu-link">Киев</a></li> 
+<li><a style = "background:#736b459b;" href="Брест.html" id="str3" class="submenu-link">Брест</a></li> 
+<li><a style = "background:#736b459b;" href="Керчь.html" id="str3" class="submenu-link">Керчь</a></li> 
+<li><a style = "background:#736b459b;" href="Новороссийск.html" id="str3" class="submenu-link">Новороссийск</a></li> 
+<li><a style = "background:#736b459b;" href="Минск.html" id="str3" class="submenu-link">Минск</a></li> 
+<li><a style = "background:#736b459b;" href="Тула.html" id="str3" class="submenu-link">Тула</a></li> 
+<li><a style = "background:#736b459b;" href="Мурманск.html" id="str3" class="submenu-link">Мурманск</a></li> 
+<li><a style = "background:#736b459b;" href="Смоленск.html" id="str3" class="submenu-link">Смоленск</a></li>    
+      </ul>
+    </li>
+    <li><a href="КартаМ.html">Карта</a></li>
+<li><a href="ТестПриветствие.html">Тест</a></li>
+<li><a href="Поиск.html">Поиск</a>
+      <ul class="submenu2" style = "background:#736b459b;" >
+      <li><input type="text" onclick =
+
+ "(function() {
+  document.getElementById('Поиск').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid2');
+a.click();
+    }
+  });
+})();" id = "Поиск" placeholder="Поиск">
+       <input type="button" id = "butnotid2"  onclick="putsearch()" value="Искать">
+	</li>
+  </ul>
+
+
+
+</nav>
+
+
+
+<div class="wrapper">
+<div class="content">
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 13</div>
+  <img src="Слайдер/минск.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Минск</div>
+<img class = "imgh" src="Слайдер/минскгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 13</div>
+  <img src="Слайдер/сева.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Севастополь</div>
+<img class = "imgh" src="Слайдер/севастопольгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  <img src="Слайдер/керчь.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Керчь</div>
+<img class = "imgh" src="Слайдер/керчьгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  <img src="Слайдер/брест.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Брест</div>
+<img class = "imgh" src="Слайдер/брестгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  <img src="Слайдер/мурманск.png" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Мурманск</div>
+<img class = "imgh" src="Слайдер/мурманскгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  <img src="Слайдер/ленинград.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Ленинград</div>
+<img class = "imgh" src="Слайдер/ленинградгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  <img src="Слайдер/волгоград.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Волгоград</div>
+<img class = "imgh" src="Слайдер/волгоградгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  <img src="Слайдер/одесса.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Одесса</div>
+<img class = "imgh" src="Слайдер/одессагерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  <img src="Слайдер/москва.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Москва</div>
+<img class = "imgh" src="Слайдер/москвагерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 13</div>
+  <img src="Слайдер/киев.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Киев</div>
+<img class = "imgh" src="Слайдер/киевгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  <img src="Слайдер/новороссийск.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Новороссийск</div>
+<img class = "imgh" src="Слайдер/новороссийскгерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="Слайдер/тула.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Тула</div>
+<img class = "imgh" src="Слайдер/тулагерб.png">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  <img src="Слайдер/смоленск.jpg" style="width:100%; height: 30vw">
+  <div class="text">Виртуальная экскурсия "Города-герои Великой Отечественной войны"</div>
+  <div class="text2">Смоленск</div>
+<img class = "imgh" src="Слайдер/смоленскгерб.png">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"  style = "  -ms-user-select: none;  -moz-user-select: none;  -khtml-user-select: none; -webkit-user-select: none;"><</a>
+<a class="next" onclick="plusSlides(1)" style = "  -ms-user-select: none;  -moz-user-select: none;  -khtml-user-select: none; -webkit-user-select: none;">></a>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+  <span class="dot" onclick="currentSlide(10)"></span> 
+  <span class="dot" onclick="currentSlide(11)"></span> 
+  <span class="dot" onclick="currentSlide(12)"></span> 
+  <span class="dot" onclick="currentSlide(13)"></span>
+</div>
+
+
+
+<a href ="Города.html"><input type="button" class="button6" value="Города"></a>
+</div>
+
+</div>
+ <div class="footer" style="font-size:1.3vw">
+   
+    Учреждение образования "Пинский государственный колледж техники и технологий"
+   
+  </div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+setInterval(plusSlides, 10000,1);
+
+</script>
+
+
+
+    </body>
+</html>

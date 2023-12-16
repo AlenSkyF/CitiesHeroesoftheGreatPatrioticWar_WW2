@@ -1,0 +1,105 @@
+﻿<html>
+    <head>
+       <title>Поиск</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ПоискCSS\data.js"></script>
+<link rel="stylesheet" type="text/css" href="ПоискCSS\иконка.css" /> 
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+<link rel="stylesheet" type="text/css" href="ПоискCSS\Поиск.css" > 
+
+
+
+    </head>
+
+
+
+
+    <body onload="prsearch()" >
+
+        <nav>
+  <ul class="topmenu">
+<a style = "" id="specialButton" href="#"><img style =""src="image/icon2.png" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" /></a>
+	<li><a href="Главная.html">Главная</a></li>
+    <li><a href="Города.html">Города</a>
+      <ul class="submenu">
+      <li><a id="str1" href="Ленинград.html" class="submenu-link">Ленинград(Санкт-Петербург)</a></li>
+        <li><a href="Волгоград.html" class="submenu-link">Волгоград</a></li>
+       <li><a href="Севастополь.html" id="str3" class="submenu-link">Севастополь</a></li>
+<li><a href="Одесса.html" id="str3" class="submenu-link">Одесса</a></li> 
+<li><a href="Москва.html" id="str3" class="submenu-link">Москва</a></li> 
+<li><a href="Киев.html" id="str3" class="submenu-link">Киев</a></li> 
+<li><a href="Брест.html" id="str3" class="submenu-link">Брест</a></li> 
+<li><a href="Керчь.html" id="str3" class="submenu-link">Керчь</a></li> 
+<li><a href="Новороссийск.html" id="str3" class="submenu-link">Новороссийск</a></li> 
+<li><a href="Минск.html" id="str3" class="submenu-link">Минск</a></li> 
+<li><a href="Тула.html" id="str3" class="submenu-link">Тула</a></li> 
+<li><a href="Мурманск.html" id="str3" class="submenu-link">Мурманск</a></li> 
+<li><a href="Смоленск.html" id="str3" class="submenu-link">Смоленск</a></li>    
+      </ul>
+    </li>
+    <li><a href="КартаМ.html">Карта</a></li>
+<li><a href="ТестПриветствие.html">Тест</a></li>
+<li><a href="Поиск.html">Поиск</a>
+      <ul class="submenu2" >
+      <li><input type="text" onclick =
+
+ "(function() {
+  document.getElementById('Поиск').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid2');
+a.click();
+    }
+  });
+})();" id = "Поиск" placeholder="Поиск">
+       <input type="button" id = "butnotid2"  onclick="putsearch()" value="Искать">
+	</li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+<div class="content">
+
+<div  class = "finder">
+<input type="text" class = "ins"  id="text-to-find"
+ onclick =
+
+ "(function() {
+  document.getElementById('text-to-find').addEventListener('keydown', function(e) {
+    if (e.keyCode == 13) {
+     a = document.getElementById('butnotid');
+a.click();
+    }
+  });
+})();"
+ value="">
+
+<input class = "btt"  type="button" id = "butnotid"  onclick="javascript: sech('text-to-find'); " value="Искать">
+<br>
+<br>
+<label id = "labl" class = "labbl"  style='color:white'></label>
+</div>
+</div>
+</div>
+
+ <div class="footer" style="font-size:1.3vw">
+   
+    Учреждение образования "Пинский государственный колледж техники и технологий"
+   
+  </div>
+<script>
+var word = localStorage.getItem("searchkey");
+if(word != null)
+{
+var obj = window.document.getElementById("text-to-find");
+obj.value = word;
+localStorage.removeItem("searchkey");
+a = document.getElementById('butnotid');
+a.click();
+}
+</script>
+
+
+    </body>
+
+</html>

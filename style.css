@@ -1,0 +1,380 @@
+html{height: 100%;
+    /* относительное позиционнирование */
+min-height:100%; /* минимальная высота */
+line-height: 1.15; 
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic);
+*{box-sizing: border-box;}
+body {
+background-repeat: no-repeat;
+height: 100%;
+  margin: 0; 
+  background: #f7f9fe;
+  font-family: 'Open Sans', sans-serif;
+background: url("image/ФОТО.jpg");
+background-size: 100% 100%;}
+
+nav {
+position: relative;
+z-index: 999999;
+  background: #ffffff10;
+	backdrop-filter:blur(2px);
+-webkit-backdrop-filter:: blur(2px);
+  box-shadow: 0 2px 10px 0px #2f4f4f;
+  border-top: 2px solid #ffffff10;
+  text-align: center;}
+nav a {
+  text-decoration: none;
+  display: block;
+  transition: .3s linear;
+position: relative;
+z-index: 999999;
+}
+
+
+nav ul .clo{
+  font-family: "Monotype Corsiva";
+color: #a4b309;
+letter-spacing: 3px;
+display: inline-block;
+  position: relative;
+  margin-left: -4px;
+vertical-align: middle;
+text-align: center;
+font-weight: bold;
+  padding: 0px 29px 0px 0px;
+  font-size: 24px;
+word-spacing: 3px;
+line-height: 25px;
+text-shadow: 1px 1px 1px #571414,
+             2px 2px 1px #362727;
+}  
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+  margin-right: -4px;
+  
+}
+.topmenu > li:last-child {}
+.topmenu > li > a {
+  font-weight: bold;
+  padding: 20px 90px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:white;}
+.active:after, .submenu-link:after {
+  
+  font-family: "FontAwesome";
+  color: white;
+  margin-left: 10px;}
+.topmenu .active, .topmenu > li > a:hover, .submenu li a:hover , .gl:hover
+{color: #ddbe86;
+ text-decoration: none;
+  background: #2F4F4F;
+
+ }
+.submenu {
+  position: absolute;
+  left: -1px;
+  z-index: 5;
+  width: 20vw;
+  border-bottom: 1px solid black;
+  visibility: hidden;
+  opacity: 0;  
+  transform: translateY(10px);
+  transition: .3s ease-in-out;}
+.submenu li {position: relative;}
+.submenu a {
+ background: #2b1c1cd6;
+	
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  color: white;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 20px;}
+.submenu .submenu {
+  position: absolute;
+  top: 0;
+  left: calc(100% );
+  left: -webkit-calc(100%);}
+	 
+nav li:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);}
+
+
+
+
+.footer {
+
+color: white;
+text-align:center;
+
+    
+    text-align: center;
+	padding-top:14px;
+	width: 100%;
+	height: 65px;
+background: #ffffff10;
+	backdrop-filter:blur(3px);
+-webkit-backdrop-filter:: blur(3px);
+  box-shadow: 0 2px 21px 3px #2f4f4f;
+border-top: 1px solid black;}
+}
+
+
+
+
+
+.wrapper {		
+	margin: 0 auto;
+	background: #F5F7FA;
+	font: 14px/20px Arial, sans-serif;
+}
+.content {
+min-height: calc(100vh - 124px);
+}
+
+
+.txtmn {	
+	
+padding-top:200px;	
+text-align: center;
+
+color: #a4b309;
+letter-spacing: 3px;
+
+vertical-align: middle;
+text-align: center;
+font-weight: bold;
+
+  font-size: 67px;
+word-spacing: 14px;
+line-height: 80px;
+text-shadow: 2px 2px 4px black,
+             2px 2px 7px black;
+}
+
+
+  .btns {	
+margin-top: 50px;
+margin-left: 650px;
+Background:white;
+}
+.btns2 {	
+margin-top: 130px;
+position: relative;
+left: 50%;
+transform: translate(-50%, 0);
+ width:25%;
+font-size: 40px;
+}
+
+
+
+
+
+
+
+.button6 {
+margin-bottom: 70px;
+margin-top: 50px;
+left: 50%;
+transform: translate(-50%, 0);
+ width:230px;
+font-size: 40px;
+  position: relative;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #cc5500;
+  user-select: none;
+  padding: .4em 1em;
+  outline: none;
+  border-radius: 20px;
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+  background-size: 100% 100%, auto;
+  background-position: 50% 50%;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+  transition: 0.2s;
+}
+.button6:hover {
+  background-size: 140% 100%, auto;
+}
+.button6:active {
+  top: 1px;
+  color: #ffdead;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+}
+
+
+
+
+
+
+
+.mySlides {display: none}
+
+
+/* Slideshow container */
+.slideshow-container {
+border:0.6vw solid #735d309f;
+  max-width: 90vw;
+  position: relative;
+  margin: auto;
+margin-top:2vw;
+margin-bottom:0vw;
+}
+
+/* Next & previous buttons */
+.prev{
+opacity: 0.10;
+  cursor: pointer;
+  position: absolute;
+  top: 13vw;
+ width: 7vw;
+font-family: Verdana, sans-serif; margin:0;
+  padding: 2vw;
+padding-left:1vw;
+padding-right:3vw;
+  margin-top: -1px;
+  color: white;
+  font-weight: bold;
+  font-size: 6vw;
+  transition: 0.3s ease;
+    border-radius: 0vw 3vw 3vw 0vw;
+}
+
+.next {
+opacity: 0.10;
+font-family: Verdana, sans-serif; margin:0;
+  cursor: pointer;
+  position: absolute;
+  top: 13vw;
+  width: 7vw;
+
+  padding: 2vw;
+	right: 0px;
+  margin-top: -1vw;
+  color: white;
+  font-weight: bold;
+  font-size: 2vw;
+  transition: 0.3s ease;
+  border-radius: 3vw 0 0 3vw;
+}
+
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+opacity: 1;
+}
+
+/* Caption text */
+.text {
+font-family: Verdana, sans-serif; margin:0;
+  color: #a4b309;
+letter-spacing: 0vw;
+ 
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  width: 20vw;
+
+  vertical-align: middle;
+text-align: justify;
+font-weight: bold;
+
+  font-size: 4vw;
+line-height: 5vw;
+text-shadow: 0vw 0vw 1vw black,
+            0vw 0vw 0vw black;
+}
+.text2 {
+font-family: Verdana, sans-serif; margin:0;
+left:40%;
+  color: #e03838;
+letter-spacing: 0vw;
+ 
+  padding: 8px 12px;
+  position: absolute;
+  top: 1vw;
+  width: 50vw;
+  vertical-align: middle;
+text-align: center;
+font-weight: bold;
+
+  font-size: 5vw;
+
+
+text-shadow: 0vw 0vw 1vw black,
+            0vw 0vw 0vw black;
+}
+.imgh{
+position: absolute;
+height:15vw;
+width:14vw;
+top:10vw;
+left:50vw;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 1vw;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1vw;
+  width: 1vw;
+  margin: 0 0vw 0 0;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300vw) {
+  .prev, .next,.text {font-size: 3.3vw; line-height:3.4vw}
+}
